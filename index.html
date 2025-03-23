@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Basic Calculator - HTML , CSS , JS</title>
+</head>
+<body>
+    <nav>
+        <h1>Basic Calculator</h1>
+        <div id="dark-light-btn">
+            <input type="checkbox" id="dark-light-checkbox" onclick="toggle_dark_light()"/>
+            <label for="dark-light-checkbox">
+                <div id="dark-light-bullet"></div>
+            </label>
+        </div> 
+    </nav>
+    <div id="calculator">
+        <div id="screen">
+            <div id="data"></div>
+            <div id="io"></div>
+        </div>
+        <table id="buttons">
+            <tr>
+                <td id="key-AC">AC</td>
+                <td id="key-C">C</td>
+                <td id="key-plus-minus">±</td>
+                <td id="factorial">x!</td>
+                <td id="one-divide-x">1/x</td>
+            </tr>
+            <tr>
+                <td id="key-sin">sin</td>
+                <td id="key-cos">cos</td>
+                <td id="key-tan">tan</td>
+                <td id="key-cot">cot</td>
+                <td id="key-log">log</td>
+            </tr>
+            <tr>
+                <td id="key-7">7</td>
+                <td id="key-8">8</td>
+                <td id="key-9">9</td>
+                <td id="key-sqrt">√</td>
+                <td id="key-square">x²</td>
+            </tr>
+            <tr>
+                <td id="key-4">4</td>
+                <td id="key-5">5</td>
+                <td id="key-6">6</td>
+                <td id="key-divide">÷</td>
+                <td id="key-multiply">×</td>
+            </tr>
+            <tr>
+                <td id="key-1">1</td>
+                <td id="key-2">2</td>
+                <td id="key-3">3</td>
+                <td id="key-minus">-</td>
+                <td id="key-plus" rowspan="2">+</td>
+            </tr>
+            <tr>
+                <td id="key-00">00</td>
+                <td id="key-0">0</td>
+                <td id="key-dot">.</td>
+                <td id="key-equal">=</td>
+            </tr>            
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

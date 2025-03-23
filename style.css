@@ -1,0 +1,188 @@
+:root {
+    /*current color pallet*/
+    --primary-color: #4CAF50;
+    --secondary-color: #FF9800;
+    --bg-color: #1B1B1B;
+    --calculator-bg: #2C3E50;
+    --screen-bg: forestgreen;
+    --screen-text: #ECF0F1;
+    --button-bg: #2980B9;
+    --button-text: #FFFFFF;
+    --operator-bg: #E74C3C;
+    --operator-text: #FFFFFF;
+    --hover-bg: #F1C40F;
+    --hover-text: #2C3E50;
+
+    /*dark color pallet*/
+    --dark-primary-color: #4CAF50;
+    --dark-secondary-color: #FF9800;
+    --dark-bg-color: #1B1B1B;
+    --dark-calculator-bg: #2C3E50;
+    --dark-screen-bg: forestgreen;
+    --dark-screen-text: #ECF0F1;
+    --dark-button-bg: #2980B9;
+    --dark-button-text: #FFFFFF;
+    --dark-operator-bg: #E74C3C;
+    --dark-operator-text: #FFFFFF;
+    --dark-hover-bg: #F1C40F;
+    --dark-hover-text: #2C3E50;
+
+    /*light color pallet*/
+    --light-primary-color: #4CAF50;
+    --light-secondary-color: #FF9800;
+    --light-bg-color: #eeeeee;
+    --light-calculator-bg: white;
+    --light-screen-bg: white;
+    --light-screen-text: #222222;
+    --light-button-bg: white;
+    --light-button-text: black;
+    --light-operator-bg: #E74C3C;
+    --light-operator-text: black;
+    --light-hover-bg: #F1C40F;
+    --light-hover-text: #2C3E50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+/*nav section*/
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--secondary-color);
+}
+nav h1{
+    color: var(--bg-color);
+}
+
+/*dark - light mode*/
+#dark-light-checkbox {
+    display: none;
+}
+
+#dark-light-btn label {
+    display: flex;
+    align-items: center;
+    padding: 0px 1px;
+    width: 50px;
+    height: 30px;
+    border: 3px solid var(--calculator-bg);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#dark-light-bullet {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--calculator-bg);
+    transition: .3s ease transform;
+}
+
+
+/*calculator container*/
+#calculator {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    background-color: var(--calculator-bg);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px black;
+}
+
+/*screen container*/
+#screen {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    top: 10px;
+    height: 100px;
+    width: 280px;
+    border-radius: .5rem;
+    background-color: var(--screen-bg);
+    border: 1px solid black;
+    color: var(--screen-text);
+    box-shadow: inset 0px 0px 10px black;
+    padding: 0px 20px;
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+/*buttons container*/
+#buttons {
+    position: absolute;
+    top: 120px;
+    width: 280px;
+    height: 270px;
+    border-radius: .5rem;
+    background-color: var(--button-bg);
+    padding: 4px;
+    border-spacing: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+/*buttons styling*/
+td {
+    width: 40px;
+    text-align: center;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border-radius: .4rem;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 5px black;
+}
+
+td:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-text);
+    cursor: pointer;
+}
+
+#key-AC, #key-C, #key-plus {
+    background-color: var(--primary-color);
+    color: var(--button-text);
+}
+
+#key-sin, #key-cos, #key-tan, #key-cot, #key-log, #key-sqrt, #key-square {
+    background-color: var(--secondary-color);
+    color: var(--button-text);
+}
+
+#key-divide, #key-multiply, #key-minus, #key-equal {
+    background-color: var(--operator-bg);
+    color: var(--operator-text);
+}
+
+#key-AC:hover, #key-C:hover, #key-plus:hover,
+#key-sin:hover, #key-cos:hover, #key-tan:hover,
+#key-cot:hover, #key-log:hover, #key-sqrt:hover, #key-square:hover,
+#key-divide:hover, #key-multiply:hover, #key-minus:hover, #key-equal:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-text);
+}
