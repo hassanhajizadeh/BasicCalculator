@@ -6,25 +6,25 @@ A simple yet functional calculator web app that supports both dark and light the
 
 ## 🚀 Demo
 
-[🔗 Show Demo](https://hassanhajiazeh-basic-calculator.netlify.app)
+[🔗 Show Demo](https://hassanhajizadeh-basic-calculator.netlify.app)
 
 ---
 
 ## ✨ Features
 
-- Basic Operations: `+`, `-`, `×`, `÷`
-- Scientific Functions:  
-  `sin`, `cos`, `tan`, `cot`, `log`, `square`, `power`
-- Dark and Light Mode Toggle
-- Responsive Design
+-   Basic Operations: `+`, `-`, `×`, `÷`
+-   Scientific Functions:  
+    `sin`, `cos`, `tan`, `cot`, `log`, `square`, `power`
+-   Dark and Light Mode Toggle
+-   Responsive Design
 
 ---
 
 ## 🛠️ Built With
 
-- **HTML**
-- **CSS**
-- **Vanilla JavaScript**
+-   **HTML**
+-   **CSS**
+-   **Vanilla JavaScript**
 
 ---
 
@@ -38,9 +38,9 @@ A simple yet functional calculator web app that supports both dark and light the
 ## 📂 How to Use
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/basic-calculator.git
-   ```
+    ```bash
+    git clone https://github.com/your-username/basic-calculator.git
+    ```
 2. Open `index.html` in your browser.
 
 ---
