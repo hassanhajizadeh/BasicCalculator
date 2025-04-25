@@ -39,7 +39,7 @@ A simple yet functional calculator web app that supports both dark and light the
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/basic-calculator.git
+    git clone https://github.com/hassanhajizadeh/basic-calculator.git
     ```
 2. Open `index.html` in your browser.
 
