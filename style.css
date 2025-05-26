@@ -1,45 +1,45 @@
 :root {
     /*current color pallet*/
-    --primary-color: #4CAF50;
-    --secondary-color: #FF9800;
-    --bg-color: #1B1B1B;
-    --calculator-bg: #2C3E50;
+    --primary-color: #4caf50;
+    --secondary-color: #ff9800;
+    --bg-color: #1b1b1b;
+    --calculator-bg: #2c3e50;
     --screen-bg: forestgreen;
-    --screen-text: #ECF0F1;
-    --button-bg: #2980B9;
-    --button-text: #FFFFFF;
-    --operator-bg: #E74C3C;
-    --operator-text: #FFFFFF;
-    --hover-bg: #F1C40F;
-    --hover-text: #2C3E50;
+    --screen-text: #ecf0f1;
+    --button-bg: #2980b9;
+    --button-text: #ffffff;
+    --operator-bg: #e74c3c;
+    --operator-text: #ffffff;
+    --hover-bg: #f1c40f;
+    --hover-text: #2c3e50;
 
     /*dark color pallet*/
-    --dark-primary-color: #4CAF50;
-    --dark-secondary-color: #FF9800;
-    --dark-bg-color: #1B1B1B;
-    --dark-calculator-bg: #2C3E50;
+    --dark-primary-color: #4caf50;
+    --dark-secondary-color: #ff9800;
+    --dark-bg-color: #1b1b1b;
+    --dark-calculator-bg: #2c3e50;
     --dark-screen-bg: forestgreen;
-    --dark-screen-text: #ECF0F1;
-    --dark-button-bg: #2980B9;
-    --dark-button-text: #FFFFFF;
-    --dark-operator-bg: #E74C3C;
-    --dark-operator-text: #FFFFFF;
-    --dark-hover-bg: #F1C40F;
-    --dark-hover-text: #2C3E50;
+    --dark-screen-text: #ecf0f1;
+    --dark-button-bg: #2980b9;
+    --dark-button-text: #ffffff;
+    --dark-operator-bg: #e74c3c;
+    --dark-operator-text: #ffffff;
+    --dark-hover-bg: #f1c40f;
+    --dark-hover-text: #2c3e50;
 
     /*light color pallet*/
-    --light-primary-color: #4CAF50;
-    --light-secondary-color: #FF9800;
+    --light-primary-color: #4caf50;
+    --light-secondary-color: #ff9800;
     --light-bg-color: #eeeeee;
     --light-calculator-bg: white;
     --light-screen-bg: white;
     --light-screen-text: #222222;
     --light-button-bg: white;
     --light-button-text: black;
-    --light-operator-bg: #E74C3C;
+    --light-operator-bg: #e74c3c;
     --light-operator-text: black;
-    --light-hover-bg: #F1C40F;
-    --light-hover-text: #2C3E50;
+    --light-hover-bg: #f1c40f;
+    --light-hover-text: #2c3e50;
 }
 
 * {
@@ -70,7 +70,7 @@ nav {
     height: 60px;
     background-color: var(--secondary-color);
 }
-nav h1{
+nav h1 {
     color: var(--bg-color);
 }
 
@@ -95,9 +95,8 @@ nav h1{
     height: 22px;
     border-radius: 50%;
     background-color: var(--calculator-bg);
-    transition: .3s ease transform;
+    transition: 0.3s ease transform;
 }
-
 
 /*calculator container*/
 #calculator {
@@ -123,7 +122,7 @@ nav h1{
     top: 10px;
     height: 100px;
     width: 280px;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background-color: var(--screen-bg);
     border: 1px solid black;
     color: var(--screen-text);
@@ -140,13 +139,12 @@ nav h1{
     top: 120px;
     width: 280px;
     height: 270px;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background-color: var(--button-bg);
     padding: 4px;
     border-spacing: 5px;
     box-shadow: 0px 0px 10px black;
 }
-
 
 /*buttons styling*/
 td {
@@ -154,7 +152,7 @@ td {
     text-align: center;
     background-color: var(--button-bg);
     color: var(--button-text);
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     font-weight: bold;
     box-shadow: inset 0px 0px 5px black;
 }
@@ -165,25 +163,46 @@ td:hover {
     cursor: pointer;
 }
 
-#key-AC, #key-C, #key-plus {
+#key-AC,
+#key-C,
+#key-plus {
     background-color: var(--primary-color);
     color: var(--button-text);
 }
 
-#key-sin, #key-cos, #key-tan, #key-cot, #key-log, #key-sqrt, #key-square {
+#key-sin,
+#key-cos,
+#key-tan,
+#key-cot,
+#key-log,
+#key-sqrt,
+#key-square {
     background-color: var(--secondary-color);
     color: var(--button-text);
 }
 
-#key-divide, #key-multiply, #key-minus, #key-equal {
+#key-divide,
+#key-multiply,
+#key-minus,
+#key-equal {
     background-color: var(--operator-bg);
     color: var(--operator-text);
 }
 
-#key-AC:hover, #key-C:hover, #key-plus:hover,
-#key-sin:hover, #key-cos:hover, #key-tan:hover,
-#key-cot:hover, #key-log:hover, #key-sqrt:hover, #key-square:hover,
-#key-divide:hover, #key-multiply:hover, #key-minus:hover, #key-equal:hover {
+#key-AC:hover,
+#key-C:hover,
+#key-plus:hover,
+#key-sin:hover,
+#key-cos:hover,
+#key-tan:hover,
+#key-cot:hover,
+#key-log:hover,
+#key-sqrt:hover,
+#key-square:hover,
+#key-divide:hover,
+#key-multiply:hover,
+#key-minus:hover,
+#key-equal:hover {
     background-color: var(--hover-bg);
     color: var(--hover-text);
 }
